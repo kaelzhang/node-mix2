@@ -2,6 +2,12 @@
 
 module.exports = mix;
 
+
+// copy all properties in the supplier to the receiver
+// @param r {Object} receiver
+// @param s {Object} supplier
+// @param or {boolean=} whether override the existing property in the receiver
+// @param cl {(Array.<string>)=} copy list, an array of selected properties
 function mix (r, s, or, cl) {
   if (!s || !r) {
     return r;
