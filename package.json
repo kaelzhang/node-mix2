@@ -1,6 +1,6 @@
 {
   "name": "mix2",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "The YUI mix",
   "main": "index.js",
   "scripts": {
@@ -29,5 +29,11 @@
   "devDependencies": {
     "mocha": "*",
     "chai": "*"
+  },
+  "cortex": {
+    "name": "mix",
+    "devDependencies": {
+      "chai": "*"
+    }
   }
 }
