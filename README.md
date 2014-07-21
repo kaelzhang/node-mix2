@@ -1,6 +1,6 @@
 # mix2 [![NPM version](https://badge.fury.io/js/mix2.svg)](http://badge.fury.io/js/mix2) [![Build Status](https://travis-ci.org/kaelzhang/node-mix2.svg?branch=master)](https://travis-ci.org/kaelzhang/node-mix2) [![Dependency Status](https://gemnasium.com/kaelzhang/node-mix2.svg)](https://gemnasium.com/kaelzhang/node-mix2)
 
-<!-- description -->
+The port of YUI mix method for node.
 
 ## Install
 
