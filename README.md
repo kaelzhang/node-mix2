@@ -11,10 +11,27 @@ $ npm install mix2 --save
 ## Usage
 
 ```js
-var mix2 = require('mix2');
+var mix = require('mix2');
+var a = {a: 1};
+var b = {b: 2};
+var c = {a: 10, b: 20, c: 30}
+mix(a, b);
+a; // {a: 1, b: 2}
+
+mix({a: 1}, c, false);            // {a: 1,  b: 20, c: 30}
+mix({a: 1}, c, true, ['a', 'c']); // {a: 10, c: 30}
 ```
 
-## Licence
+### mix(receiver, supplier, override, copylist)
+
+- receiver `Object`
+- supplier `Object`
+- override `Boolean=true` Whether should override the existing property of `receiver`. Default to overriding
+- copylist `(Array.<String>)=` If specified, only mix the specific keys in the array.
+
+Extend the object `receiver` with `supplier`, and returns `receiver`.
+
+## License
 
 MIT
 <!-- do not want to make nodeinit to complicated, you can edit this whenever you want. -->

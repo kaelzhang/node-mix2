@@ -10,7 +10,7 @@ function mix (r, s, or, cl) {
   var i = 0,
     c, len;
 
-  or = or || or === undefined;
+  or = or || arguments.length === 2;
 
   if (cl && (len = cl.length)) {
     for (; i < len; i++) {
