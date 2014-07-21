@@ -1,6 +1,6 @@
 {
   "name": "mix2",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The YUI mix",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,12 @@
     "url": "git://github.com/kaelzhang/node-mix2.git"
   },
   "keywords": [
-    "mix2"
+    "mix",
+    "extend",
+    "yui",
+    "yui-mix",
+    "merge",
+    "object"
   ],
   "engines": { 
     "node": ">=0.11.0"
