@@ -25,18 +25,18 @@ var c = {a: 10, b: 20, c: 30}
 mix(a, b);
 a; // {a: 1, b: 2}
 
-// Will not override existing property 'a'
+// Will not override the existing property 'a'
 mix({a: 1}, c, false);            // {a: 1,  b: 20, c: 30}
 
 // Only copy property 'a' and 'c', and override.
 mix({a: 1}, c, true, ['a', 'c']); // {a: 10, c: 30}
 ```
 
-### mix(receiver, supplier, override, copylist)
+### mix(receiver, supplier, [override], [copylist])
 
 - receiver `Object`
 - supplier `Object`
-- override `Boolean=true` Whether should override the existing property of `receiver`. Default to overriding
+- override `Boolean=true` Whether should override the existing property of `receiver`. Default to overriding(`true`)
 - copylist `(Array.<String>)=` If specified, only mix the specific keys in the array. Otherwise, mixin all properties.
 
 Extend the object `receiver` with `supplier`, and returns `receiver`.
