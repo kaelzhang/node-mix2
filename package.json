@@ -1,6 +1,6 @@
 {
   "name": "mix2",
-  "version": "0.1.6",
+  "version": "1.0.0",
   "description": "The YUI mix",
   "main": "index.js",
   "scripts": {
