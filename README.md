@@ -1,35 +1,33 @@
-# mix [![NPM version](https://badge.fury.io/js/mix2.svg)](http://badge.fury.io/js/mix2) [![Build Status](https://travis-ci.org/kaelzhang/node-mix2.svg?branch=master)](https://travis-ci.org/kaelzhang/node-mix2) [![Dependency Status](https://gemnasium.com/kaelzhang/node-mix2.svg)](https://gemnasium.com/kaelzhang/node-mix2)
+[![NPM version](https://badge.fury.io/js/mix2.svg)](http://badge.fury.io/js/mix2)
+[![Build Status](https://travis-ci.org/kaelzhang/node-mix2.svg?branch=master)](https://travis-ci.org/kaelzhang/node-mix2)
 
-The port of YUI3's mix method for node. Mixins two objects. 
+# mix2
+
+The port of YUI3's mix method for node. Mixins two objects.
+
+买不起爱疯，擦！还好我有 MIX2.
 
 ## Install
 
-node:
-
 ```bash
-$ npm install mix2 --save
-```
-
-cortex:
-
-```bash
-$ cortex install mix --save
+$ npm install mix2
 ```
 
 ## Usage
 
 ```js
-var a = {a: 1};
-var b = {b: 2};
-var c = {a: 10, b: 20, c: 30}
-mix(a, b);
-a; // {a: 1, b: 2}
+const a = {a: 1}
+const b = {b: 2}
+const c = {a: 10, b: 20, c: 30}
+
+mix(a, b)
+console.log(a) // {a: 1, b: 2}
 
 // Will not override the existing property 'a'
-mix({a: 1}, c, false);            // {a: 1,  b: 20, c: 30}
+mix({a: 1}, c, false)             // {a: 1,  b: 20, c: 30}
 
 // Only copy property 'a' and 'c', and override.
-mix({a: 1}, c, true, ['a', 'c']); // {a: 10, c: 30}
+mix({a: 1}, c, true, ['a', 'c'])  // {a: 10, c: 30}
 ```
 
 ### mix(receiver, supplier, [override], [copylist])

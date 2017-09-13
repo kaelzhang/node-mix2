@@ -1,6 +1,6 @@
 {
   "name": "mix2",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The YUI mix",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
     "merge",
     "object"
   ],
-  "engines": { 
+  "engines": {
     "node": ">=0.10.0"
   },
   "author": "kaelzhang",
