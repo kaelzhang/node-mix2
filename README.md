@@ -5,8 +5,6 @@
 
 The port of YUI3's mix method for node. Mixins two objects.
 
-买不起爱疯，擦！还好我有 MIX2.
-
 ## Install
 
 ```bash

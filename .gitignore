@@ -1,5 +1,7 @@
 # Cortex
 neurons
+package-lock.json
+*.tgz
 
 # Numerous always-ignore extensions
 *.bak
