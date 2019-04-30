@@ -1,4 +1,3 @@
-[![NPM version](https://badge.fury.io/js/mix2.svg)](http://badge.fury.io/js/mix2)
 [![Build Status](https://travis-ci.org/kaelzhang/node-mix2.svg?branch=master)](https://travis-ci.org/kaelzhang/node-mix2)
 
 # mix2
