@@ -1,11 +1,14 @@
 {
   "name": "mix2",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "The YUI mix",
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter spec ./test/mix2.js"
   },
+  "files": [
+    "index.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/kaelzhang/node-mix2.git"
